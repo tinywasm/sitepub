@@ -2,8 +2,9 @@
 PLAN: "feat: sitepub — publicar un sitio compilado a un remoto git, atómicamente"
 EXECUTOR: jules
 REVIEWER: none
-STATUS: running
+STATUS: review
 SESSION: 5654775287489933520
+PR: https://github.com/tinywasm/sitepub/pull/1
 ---
 
 > Este plan se despacha con el flujo CodeJob. Ver skill: agents-workflow.
