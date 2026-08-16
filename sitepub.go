@@ -31,8 +31,8 @@ const (
 
 // Author is the identity that signs the publishing commits.
 type Author struct {
-	Name  string // e.g. "MJosefa CMS"
-	Email string // e.g. "cms@monjitaschillan.cl"
+	Name  string // e.g. "Site CMS"
+	Email string // e.g. "cms@example.com"
 }
 
 // Config is the publishing target. It is validated in New, not in Publish: an

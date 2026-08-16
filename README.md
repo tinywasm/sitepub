@@ -15,7 +15,7 @@ pub, err := sitepub.New(sitepub.Config{
     WorkDir: "/var/lib/mycms/site",
     Branch:  "",         // empty = the remote's default branch
     SiteDir: "",         // repo subdirectory where sitec runs; empty = root
-    Author:  sitepub.Author{Name: "MJosefa CMS", Email: "cms@monjitaschillan.cl"},
+    Author:  sitepub.Author{Name: "Site CMS", Email: "cms@example.com"},
 })
 if err != nil {
     return err // an incomplete Config fails at start-up, not at 3 a.m.

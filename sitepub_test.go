@@ -143,8 +143,8 @@ func TestPublisherLifecycle(t *testing.T) {
 	workDir := filepath.Join(t.TempDir(), "work")
 
 	author := sitepub.Author{
-		Name:  "MJosefa CMS",
-		Email: "cms@monjitaschillan.cl",
+		Name:  "Site CMS",
+		Email: "cms@example.com",
 	}
 
 	cfg := sitepub.Config{
