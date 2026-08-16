@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tinywasm/devflow"
+	"github.com/tinywasm/git"
 	"github.com/tinywasm/sitepub"
 )
 
@@ -320,8 +320,8 @@ func TestDirtyWorkTreeIsNotOverwritten(t *testing.T) {
 	if err == nil {
 		t.Fatal("expected error on dirty working tree, got nil")
 	}
-	if !errors.Is(err, devflow.ErrDirtyWorkTree) {
-		t.Errorf("expected error to wrap devflow.ErrDirtyWorkTree, got: %v", err)
+	if !errors.Is(err, git.ErrDirtyWorkTree) {
+		t.Errorf("expected error to wrap git.ErrDirtyWorkTree, got: %v", err)
 	}
 
 	if _, err := os.Stat(handEdit); err != nil {

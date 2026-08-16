@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tinywasm/devflow"
+	"github.com/tinywasm/git"
 )
 
 const (
@@ -63,7 +63,7 @@ type Result struct {
 // Publisher owns the working copy and runs the publish cycle.
 type Publisher struct {
 	cfg   Config
-	git   *devflow.Git
+	git   *git.Git
 	logFn func(...any)
 }
 
@@ -76,7 +76,7 @@ func New(cfg Config) (*Publisher, error) {
 		return nil, errors.New(errEmptyWorkDir)
 	}
 
-	g, err := devflow.NewGit()
+	g, err := git.NewGit()
 	if err != nil {
 		return nil, fmt.Errorf("failed to initialize git handler: %w", err)
 	}
