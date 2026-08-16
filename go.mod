@@ -2,7 +2,7 @@ module github.com/tinywasm/sitepub
 
 go 1.25.2
 
-require github.com/tinywasm/devflow v0.4.62
+require github.com/tinywasm/devflow v0.4.63
 
 require (
 	al.essio.dev/pkg/shellescape v1.5.1 // indirect
