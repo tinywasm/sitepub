@@ -2,6 +2,8 @@
 PLAN: "feat: sitepub — publicar un sitio compilado a un remoto git, atómicamente"
 EXECUTOR: jules
 REVIEWER: none
+STATUS: running
+SESSION: 5654775287489933520
 ---
 
 > Este plan se despacha con el flujo CodeJob. Ver skill: agents-workflow.
